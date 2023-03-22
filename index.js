@@ -4,5 +4,5 @@ var usrnum= prompt("enter the number")
 for(i=1;i<11;i++){
   result= usrnum*i
   
-    console.log(result)
+    document.write(result)
   }
