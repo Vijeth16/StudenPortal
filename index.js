@@ -1,12 +1,12 @@
 // function,array,objects
-var read = require('readline-sync')
+//var read = require('readline-sync')
 //const a = undefined
-var user = read.question("Enter your name-")
+var user = prompt("Enter your name-")
 document.write("Welcome, "+user+" for Tech quiz")
 var score =0
 //document.write("Press ENTER to continue")
 function userques(Question,Answer){     //function
-  var usranswer=read.question(Question);  // it will display questions passed in arr
+  var usranswer=prompt(Question);  // it will display questions passed in arr
   //document.write(usranswer)
   
   if(usranswer===Answer)
