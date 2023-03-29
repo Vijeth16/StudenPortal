@@ -1,22 +1,26 @@
 // function,array,objects
-//var read = require('readline-sync')
+var read = require('readline-sync')
+// var myexp = require('express')
+
 //const a = undefined
-var user = prompt("Enter your name-")
- window.print("Welcome, "+user+" for Tech quiz")
+console.log("hi welcome to exam portal")
+var user = read.question("Enter your name-")
+
+  Question.write("Welcome, "+user+" for Tech quiz")
 var score =0
-// window.print("Press ENTER to continue")
+//  Question.write("Press ENTER to continue")
 function userques(Question,Answer){     //function
-  var usranswer=prompt(Question);  // it will display questions passed in arr
-  // window.print(usranswer)
+  var usranswer=read.question(Question);  // it will display questions passed in arr
+  //  Question.write(usranswer)
   
   if(usranswer===Answer)
   {
-     window.print("correct")
+      Question.write("correct")
     score = score+1
-     window.print(score)
+      Question.write(score)
   }
   else{
-     window.print("wrong")
+      Question.write("wrong")
   
   }
   
@@ -34,5 +38,5 @@ for(i=0;i<arr.length;i++){
   var arr1 = arr[i];
   //userques(arr.question,arr.answer)
   userques(arr1.question,arr1.answer); //function call
-   window.print(userques);
+    Question.write(userques);
 }
